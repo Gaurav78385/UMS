@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>UMS Bank</title>
+<lang ="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" author="Gaurav Sharma">  
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Gaurav Sharma">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <style>
+  nav{
+      
+  }
+    img{
+        width:100%;
+    }
+    html{
+        background:skyblue
+    }   
+    form{
+    background:#fff;
+    display:flex;
+    flex direction:;
+    padding:4vw 2vw ;
+    width:90%;
+    max-width:400px;
+    border-radius:5px;
+    position:center
+    }
+       div {
+        border:0
+        margin:10px 0;
+        padding:20px;
+        outline:none;
+       background:#f5f5f5;
+       font-size:16px;
+    }
+submit    {
+        padding:15px;
+        background:#ff5361;
+        color:#fff
+        font-size:18px;
+        border:0;
+        outline:none;
+        cursor:pointer;
+        width:150px;
+        margin: 20px auto 0;
+        border-radius: 30px;
+    }
+    
+    
+    </style>
+</head>
+<body>
+<nav>
+<a href="#s1">About us</a>
+<a href="#s2">Contact</a>
+<a href="#s3">Login</a>
+</nav>
+<hr>
+<img 
+src="content://media/external/downloads/5388" alt>
+<hr>
+
+<h4 id="s1">ABOUT</h4>
+<p>Self-help society is a term that refers to a social movement that promotes the idea of individuals improving their own lives through self-reliance, mutual aid, and collective action. Self-help society is based on the belief that people can overcome their personal and social problems by learning from each other, sharing their experiences, and supporting one another. Self-help society is often associated with various forms of self-organization, such as self-help groups, cooperatives, community development projects, and social enterprises.</p>
+<h4>INSTRUCTION:-</h4>
+<ol>
+<li>Loan, character of the members (civil score/transactions with the Society) will decide whether the loan will be given or not, if yes then how much, transact with the Society at the right time.</li>
+<li>If membership fee is not deposited continuously for three months, membership will be canceled and the deposited amount will be confiscated.</li>
+<li>To take a loan, two guarantors are required, who must be members of the society.</li><br>
+
+<h4 id="s3"><u>Login</u><h4>
+<form onsubmit="sendemail(); reset(); return false;">
+  <div>
+  <form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" placeholder="Your name"required><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" placeholder="Surname"><br>
+    <label for="contact">Phone Number:</label>
+    <input type="tel" id="contact" name="contact" placeholder="91+" pattern="[0-9]{10}" required><br>
+    <label for="email">Gmail Address:</label>
+    <input type="email" id="email" name="email" placeholder="@gmail.com"pattern=".+@gmail.com" required><br>
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="3" cols="30" placeholder="Your address"required></textarea><br>
+    <input type="submit" value="Submit">
+    </div>
+</form>
+<p id="s2"><b>Contact no:-<br>
+9810347161,
+7838582166</b></p>
+<script>https://smtpjs.com/v3/smtp.js</script>
+<script>
+   function sendEmail({
+     Email.send({
+      Host : "smtp.elasticemail.com",
+      Username : "gauravshandilya2007@gmail.com", Password : "DIGam@123",
+ To : 'gauravsharmabhavesh56@gmail.com', From : document.getElementById("email").value, 
+ Subject : "New User contact", 
+          Body : "Name:" + document.getElementById("name").value
+ + "<br> Email:" + document.getElementById("email").value
+ + "<br> Phone no:" + document.getElementById("phone").value
+ + "<br> Address:" + document.getElementById("address").value
+          }).then( 
+       message = > alert(Your request sent successfully.)
+        );
+        }
+</script>
+</body>
+</html>
+
